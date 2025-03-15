@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Hand-gesture-drawing-proejct
+Version: 0.0.1
+Author: Nasim
+Author-email: nasimakram6200@gmail.com
+Requires-Dist: opencv-python
+Requires-Dist: mediapipe
+Requires-Dist: numpy
+Requires-Dist: open3d
+Requires-Dist: pygame
+Requires-Dist: pyopengl
+Requires-Dist: flask
+Requires-Dist: pyinstaller

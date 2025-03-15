@@ -1,0 +1,7 @@
+setup.py
+Hand_gesture_drawing_proejct.egg-info/PKG-INFO
+Hand_gesture_drawing_proejct.egg-info/SOURCES.txt
+Hand_gesture_drawing_proejct.egg-info/dependency_links.txt
+Hand_gesture_drawing_proejct.egg-info/requires.txt
+Hand_gesture_drawing_proejct.egg-info/top_level.txt
+src/__init__.py
