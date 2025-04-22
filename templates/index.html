@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Drawing</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        #video {
+            border: 2px solid black;
+            width: 640px;
+            height: 480px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hand Gesture Drawing</h1>
+    <img id="video" src="{{ url_for('video_feed') }}" alt="Camera Feed">
+
+    <br>
+    <button onclick="clearCanvas()">Clear Drawing</button>
+
+    <script>
+        function clearCanvas() {
+            fetch('/clear_canvas', { method: 'POST' })
+                .then(response => response.text())
+                .then(data => console.log(data));
+        }
+    </script>
+
+</body>
+</html>
+
